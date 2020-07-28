@@ -1,0 +1,395 @@
+.Bulbasaur {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(205, 248, 141);
+    border-width: 0px 0px;
+    border: 1px solid rgb(15, 99, 36);
+}
+
+.Bulbasaur:hover {
+    background-color: rgb(50, 69, 97);
+    color: white;
+}
+
+
+
+.Charmander {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(252, 169, 121);
+    border-width: 0px 0px;
+    border: 1px solid rgb(241, 202, 28);
+}
+
+.Charmander:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Squirtle {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(134, 220, 253);
+    border-width: 0px 0px;
+    border: 1px solid rgb(19, 108, 143);
+}
+
+.Squirtle:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Chikorita {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(205, 248, 141);
+    border-width: 0px 0px;
+    border: 1px solid rgb(15, 99, 36);
+}
+
+.Chikorita:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Cyndaquil {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(252, 169, 121);
+    border-width: 0px 0px;
+    border: 1px solid rgb(241, 202, 28);
+}
+
+.Cyndaquil:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Totodile {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(134, 220, 253);
+    border-width: 0px 0px;
+    border: 1px solid rgb(19, 108, 143);
+}
+
+.Totodile:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+/* 第二排 */
+
+.Treecko {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(205, 248, 141);
+    border-width: 0px 0px;
+    border: 1px solid rgb(15, 99, 36);
+}
+
+.Treecko:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+
+.Torchic {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(252, 169, 121);
+    border-width: 0px 0px;
+    border: 1px solid rgb(241, 202, 28);
+}
+
+.Torchic:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Mudkip {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(134, 220, 253);
+    border-width: 0px 0px;
+    border: 1px solid rgb(19, 108, 143);
+}
+
+.Mudkip:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Turtwig {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(205, 248, 141);
+    border-width: 0px 0px;
+    border: 1px solid rgb(15, 99, 36);
+}
+
+.Turtwig:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Chimchar {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(252, 169, 121);
+    border-width: 0px 0px;
+    border: 1px solid rgb(241, 202, 28);
+}
+
+.Chimchar:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Piplup {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(134, 220, 253);
+    border-width: 0px 0px;
+    border: 1px solid rgb(19, 108, 143);
+}
+
+.Piplup:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+
+/* 第三排 */
+
+.Snivy {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(205, 248, 141);
+    border-width: 0px 0px;
+    border: 1px solid rgb(15, 99, 36);
+}
+
+.Snivy:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+
+.Tepig {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(252, 169, 121);
+    border-width: 0px 0px;
+    border: 1px solid rgb(241, 202, 28);
+}
+
+.Tepig:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Oshawott {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(134, 220, 253);
+    border-width: 0px 0px;
+    border: 1px solid rgb(19, 108, 143);
+}
+
+.Oshawott:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Chespin {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(205, 248, 141);
+    border-width: 0px 0px;
+    border: 1px solid rgb(15, 99, 36);
+}
+
+.Chespin:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Fennekin {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(252, 169, 121);
+    border-width: 0px 0px;
+    border: 1px solid rgb(241, 202, 28);
+}
+
+.Fennekin:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Froakie {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(134, 220, 253);
+    border-width: 0px 0px;
+    border: 1px solid rgb(19, 108, 143);
+}
+
+.Froakie:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+/* 第四排 */
+
+
+.Rowlet {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(205, 248, 141);
+    border-width: 0px 0px;
+    border: 1px solid rgb(15, 99, 36);
+}
+
+.Rowlet:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+
+.Litten {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(252, 169, 121);
+    border-width: 0px 0px;
+    border: 1px solid rgb(241, 202, 28);
+}
+
+.Litten:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Popplio {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(134, 220, 253);
+    border-width: 0px 0px;
+    border: 1px solid rgb(19, 108, 143);
+}
+
+.Popplio:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Grookey {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(205, 248, 141);
+    border-width: 0px 0px;
+    border: 1px solid rgb(15, 99, 36);
+}
+
+.Grookey:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Scorbunny {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(252, 169, 121);
+    border-width: 0px 0px;
+    border: 1px solid rgb(241, 202, 28);
+}
+
+.Scorbunny:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+
+.Sobble {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(134, 220, 253);
+    border-width: 0px 0px;
+    border: 1px solid rgb(19, 108, 143);
+}
+
+.Sobble:hover {
+    background-color: rgb(50, 69, 97);
+}
+
+/* 第五排 */

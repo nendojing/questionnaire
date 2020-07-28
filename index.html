@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寶可夢御三家喜愛度調查</title>
+
+    <link rel="stylesheet" href="navStyle.css">
+    <link rel="stylesheet" href="nav2.css">
+    <link rel="stylesheet" href="pokemon.css">
+    <link rel="stylesheet" href="form.css">
+    <style>
+        div {
+            display: inline-block;
+            margin: auto;
+        }
+
+
+        /* 導覽列 */
+
+
+
+        /* 背景顏色 */
+
+
+        body {
+            background-color: white;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("image/map.jpg");
+            vertical-align: middle;
+            background-position: center;
+            background-repeat: repeat;
+
+
+        }
+
+
+        /* 表單 */
+
+        form {
+            background-color: white;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+            border-collapse: collapse;
+            text-align: left;
+            height: 400px;
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid rgb(69, 99, 182);
+        }
+
+        /* 表格 */
+
+        table {
+            border: 0px solid rgb(75, 128, 197);
+            border-collapse: collapse;
+            vertical-align: middle;
+            text-align: center;
+            margin: auto;
+
+        }
+
+        td {
+            vertical-align: middle;
+            text-align: center;
+            border-width: 0px 0px;
+            border: 0px solid white;
+        }
+
+
+
+
+
+
+
+        .TitleImg {
+            width: 100px;
+            height: auto;
+        }
+
+        /* 寶可夢名稱 */
+        .pokemonName {
+            width: 200px;
+            margin: auto;
+            color: black;
+            text-align: center;
+            font-family: 微軟正黑體;
+        }
+
+
+
+        .pokemonType {
+            width: 20px;
+            margin: auto;
+            color: white;
+            text-align: center;
+            font-family: 微軟正黑體;
+        }
+
+        .TitleName {
+            font-family: 微軟正黑體;
+        }
+
+        /* 屬性顏色 */
+
+
+        /* 按鈕 */
+        label {
+            padding: 0;
+            margin-right: 110px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th class="TitleName" colspan="6">
+                <h1 style="color: white;
+                font-weight:bold;
+                background-color: rgb(40, 83, 139);
+                width: 1220px;
+                border-radius:20px;
+                padding:20px
+                ">寶可夢御三家喜愛度調查</h1>
+            </th>
+        </tr>
+    </table>
+
+    <!-- 導覽列 -->
+    <ul class="drop-down-menu">
+        <li><a href="https://wiki.52poke.com/wiki/%E5%85%B3%E9%83%BD%E5%9C%B0%E5%8C%BA">關都地區</a>
+            <ul>
+                <li><a href="https://wiki.52poke.com/wiki/%E5%A6%99%E8%9B%99%E7%A7%8D%E5%AD%90">妙蛙種子</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E5%B0%8F%E7%81%AB%E9%BE%99">小火龍</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%9D%B0%E5%B0%BC%E9%BE%9F">傑尼龜</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://wiki.52poke.com/wiki/%E5%9F%8E%E9%83%BD%E5%9C%B0%E5%8C%BA">城都地區</a>
+            <ul>
+                <li><a href="https://wiki.52poke.com/wiki/%E8%8F%8A%E8%8D%89%E5%8F%B6">菊草葉</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E7%81%AB%E7%90%83%E9%BC%A0">火球鼠</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E5%B0%8F%E9%94%AF%E9%B3%84">小鋸鱷</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://wiki.52poke.com/wiki/%E4%B8%B0%E7%BC%98%E5%9C%B0%E5%8C%BA">豐緣地區</a>
+            <ul>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%9C%A8%E5%AE%88%E5%AE%AB">木守宮</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E7%81%AB%E7%A8%9A%E9%B8%A1">火稚雞</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%B0%B4%E8%B7%83%E9%B1%BC">水躍魚</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://wiki.52poke.com/wiki/%E7%A5%9E%E5%A5%A5%E5%9C%B0%E5%8C%BA">神奧地區</a>
+            <ul>
+                <li><a href="https://wiki.52poke.com/wiki/%E8%8D%89%E8%8B%97%E9%BE%9F">草苗龜</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E5%B0%8F%E7%81%AB%E7%84%B0%E7%8C%B4">小火焰猴</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%B3%A2%E5%8A%A0%E6%9B%BC">波加曼</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://wiki.52poke.com/wiki/%E5%90%88%E4%BC%97%E5%9C%B0%E5%8C%BA">合眾地區</a>
+            <ul>
+                <li><a href="https://wiki.52poke.com/wiki/%E8%97%A4%E8%97%A4%E8%9B%87">藤藤蛇</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%9A%96%E6%9A%96%E7%8C%AA">暖暖豬</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%B0%B4%E6%B0%B4%E7%8D%AD">水水獺</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://wiki.52poke.com/wiki/%E5%8D%A1%E6%B4%9B%E6%96%AF%E5%9C%B0%E5%8C%BA">卡洛斯地區</a>
+            <ul>
+                <li><a href="https://wiki.52poke.com/wiki/%E5%93%88%E5%8A%9B%E6%A0%97">哈力栗</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E7%81%AB%E7%8B%90%E7%8B%B8">火狐狸</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E5%91%B1%E5%91%B1%E6%B3%A1%E8%9B%99">呱呱泡蛙</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://wiki.52poke.com/wiki/%E9%98%BF%E7%BD%97%E6%8B%89%E5%9C%B0%E5%8C%BA">阿羅拉地區</a>
+            <ul>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%9C%A8%E6%9C%A8%E6%9E%AD">木木梟</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E7%81%AB%E6%96%91%E5%96%B5">火斑喵</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E7%90%83%E7%90%83%E6%B5%B7%E7%8B%AE">球球海獅</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://wiki.52poke.com/wiki/%E4%BC%BD%E5%8B%92%E5%B0%94%E5%9C%B0%E5%8C%BA">伽勒爾地區</a>
+            <ul>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%95%B2%E9%9F%B3%E7%8C%B4">敲音猴</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E7%82%8E%E5%85%94%E5%84%BF">炎兔兒</a>
+                </li>
+                <li><a href="https://wiki.52poke.com/wiki/%E6%B3%AA%E7%9C%BC%E8%9C%A5">淚眼蜥</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- 導覽列 -->
+    <!-- 中間御三家 -->
+    <table>
+        <tr>
+            <th class="TitleImg" id="TitleImg" colspan="6">
+                <img src="image/SW.png" alt="">
+            </th>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label for="001">
+                    <div class="Bulbasaur" id="Bulbasaur" data-index="妙蛙種子" style=" border-radius:20px;">
+                        <br><img width="150" src="img/Bulbasaur.png" alt="">
+                        <h2 class="pokemonName">妙蛙種子</h2>
+                        <div style="
+                                    border:10px rgb(44, 139, 44) solid;
+                                    border-radius:15px;
+                                    background-color:rgb(44, 139, 44);">
+                            <span>
+                                <h3 class="pokemonType" id="grass">草</h3>
+                            </span>
+                        </div>
+                        <div style="
+                                    border:10px purple solid;
+                                    border-radius:15px;
+                                    background-color: purple;">
+                            <h3 class="pokemonType" id="poison">毒</h3>
+                        </div>
+                        <input type="checkbox" name="Bulbasaur" id="001" value="001" style="width:20px;height:20px;">
+                </label>
+                </div>
+                </div>
+
+            </td>
+
+            <td>
+                <div>
+                    <label for="004">
+                        <div class="Charmander" id="Charmander" data-index="小火龍" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Charmander.png" alt="">
+                            <h2 class="pokemonName">小火龍</h2>
+                            <div style="
+        border:10px rgb(241, 51, 26) solid;
+        border-radius:15px;
+        background-color:rgb(241, 51, 26);">
+                                <h3 class="pokemonType" id="fire">火</h3>
+                            </div>
+                            <input type="checkbox" name="Charmander" id="004" value="004"
+                                style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="007">
+                        <div class="Squirtle" id="Squirtle" data-index="傑尼龜" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Squirtle.png" alt="">
+                            <h2 class="pokemonName">傑尼龜</h2>
+                            <div style="
+        border:10px rgb(77, 117, 170) solid;
+        border-radius:15px;
+        background-color:rgb(77, 117, 170);">
+                                <span>
+                                    <h3 class="pokemonType" id="water">水</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Squirtle" id="007" value="007" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="152">
+                        <div class="Chikorita" id="Chikorita" data-index="菊草葉" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Chikorita.png" alt="">
+                            <h2 class="pokemonName">菊草葉</h2>
+                            <div style="
+        border:10px rgb(44, 139, 44) solid;
+        border-radius:15px;
+        background-color:rgb(44, 139, 44);">
+                                <span>
+                                    <h3 class="pokemonType" id="grass">草</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Chikorita" id="152" value="152"
+                                style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="155">
+                        <div class="Cyndaquil" id="Cyndaquil" data-index="火球鼠" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Cyndaquil.png" alt="">
+                            <h2 class="pokemonName">火球鼠</h2>
+                            <div style="
+        border:10px rgb(241, 51, 26) solid;
+        border-radius:15px;
+        background-color:rgb(241, 51, 26);">
+                                <span>
+                                    <h3 class="pokemonType" id="fire">火</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Cyndaquil" id="155" value="155"
+                                style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="158">
+                        <div class="Totodile" id="Totodile" data-index="小鋸鱷" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Totodile.png" alt="">
+                            <h2 class="pokemonName">小鋸鱷</h2>
+                            <div style="
+        border:10px rgb(77, 117, 170) solid;
+        border-radius:15px;
+        background-color:rgb(77, 117, 170);">
+                                <span>
+                                    <h3 class="pokemonType" id="water">水</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Totodile" id="158" value="158" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+        </tr>
+
+
+        <!-- 第二排 -->
+
+        <tr>
+            <td>
+                <div>
+                    <label for="252">
+                        <div class="Treecko" id="Treecko" data-index="木守宮" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Treecko.png" alt="">
+                            <h2 class="pokemonName">木守宮</h2>
+                            <div style="
+                    border:10px rgb(44, 139, 44) solid;
+                    border-radius:15px;
+                    background-color:rgb(44, 139, 44);">
+                                <span>
+                                    <h3 class="pokemonType" id="grass">草</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Treecko" id="252" value="252" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+
+            </td>
+
+            <td>
+                <div>
+                    <label for="255">
+                        <div class="Torchic" id="Torchic" data-index="火雉雞" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Torchic.png" alt="">
+                            <h2 class="pokemonName">火雉雞</h2>
+                            <div style="
+                    border:10px rgb(241, 51, 26) solid;
+                    border-radius:15px;
+                    background-color:rgb(241, 51, 26);">
+                                <h3 class="pokemonType" id="fire">火</h3>
+                            </div>
+                            <input type="checkbox" name="Torchic" id="255" value="255" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="258">
+                        <div class="Mudkip" id="Mudkip" data-index="水躍魚" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Mudkip.png" alt="">
+                            <h2 class="pokemonName">水躍魚</h2>
+                            <div style="
+                    border:10px rgb(77, 117, 170) solid;
+                    border-radius:15px;
+                    background-color:rgb(77, 117, 170);">
+                                <span>
+                                    <h3 class="pokemonType" id="water">水</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Mudkip" id="258" value="258" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="387">
+                        <div class="Turtwig" id="Turtwig" data-index="草苗龜" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Turtwig.png" alt="">
+                            <h2 class="pokemonName">草苗龜</h2>
+                            <div style="
+                    border:10px rgb(44, 139, 44) solid;
+                    border-radius:15px;
+                    background-color:rgb(44, 139, 44);">
+                                <span>
+                                    <h3 class="pokemonType" id="grass">草</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Turtwig" id="387" value="387" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="390">
+                        <div class="Chimchar" id="Chimchar" data-index="小火焰猴" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Chimchar.png" alt="">
+                            <h2 class="pokemonName">小火焰猴</h2>
+                            <div style="
+                    border:10px rgb(241, 51, 26) solid;
+                    border-radius:15px;
+                    background-color:rgb(241, 51, 26);">
+                                <span>
+                                    <h3 class="pokemonType" id="fire">火</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Chimchar" id="390" value="390" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="393">
+                        <div class="Piplup" id="Piplup" data-index="波加曼" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Piplup.png" alt="">
+                            <h2 class="pokemonName">波加曼</h2>
+                            <div style="
+                    border:10px rgb(77, 117, 170) solid;
+                    border-radius:15px;
+                    background-color:rgb(77, 117, 170);">
+                                <span>
+                                    <h3 class="pokemonType" id="water">水</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Piplup" id="393" value="393" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- 第三排 -->
+
+        <tr>
+            <td>
+                <div>
+                    <label for="495">
+                        <div class="Snivy" id="Snivy" data-index="藤藤蛇" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Snivy.png" alt="">
+                            <h2 class="pokemonName">藤藤蛇</h2>
+                            <div style="
+                    border:10px rgb(44, 139, 44) solid;
+                    border-radius:15px;
+                    background-color:rgb(44, 139, 44);">
+                                <span>
+                                    <h3 class="pokemonType" id="grass">草</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Snivy" id="495" value="495" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+
+            </td>
+
+            <td>
+                <div>
+                    <label for="498">
+                        <div class="Tepig" id="Tepig" data-index="暖暖豬" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Tepig.png" alt="">
+                            <h2 class="pokemonName">暖暖豬</h2>
+                            <div style="
+                    border:10px rgb(241, 51, 26) solid;
+                    border-radius:15px;
+                    background-color:rgb(241, 51, 26);">
+                                <h3 class="pokemonType" id="fire">火</h3>
+                            </div>
+                            <input type="checkbox" name="Tepig" id="498" value="498" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="501">
+                        <div class="Oshawott" id="Oshawott" data-index="水水獺" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Oshawott.png" alt="">
+                            <h2 class="pokemonName">水水獺</h2>
+                            <div style="
+                    border:10px rgb(77, 117, 170) solid;
+                    border-radius:15px;
+                    background-color:rgb(77, 117, 170);">
+                                <span>
+                                    <h3 class="pokemonType" id="water">水</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Oshawott" id="501" value="501" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="650">
+                        <div class="Chespin" id="Chespin" data-index="哈力栗" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Chespin.png" alt="">
+                            <h2 class="pokemonName">哈力栗</h2>
+                            <div style="
+                    border:10px rgb(44, 139, 44) solid;
+                    border-radius:15px;
+                    background-color:rgb(44, 139, 44);">
+                                <span>
+                                    <h3 class="pokemonType" id="grass">草</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Chespin" id="650" value="650" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="653">
+                        <div class="Fennekin" id="Fennekin" data-index="火狐狸" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Fennekin.png" alt="">
+                            <h2 class="pokemonName">火狐狸</h2>
+                            <div style="
+                    border:10px rgb(241, 51, 26) solid;
+                    border-radius:15px;
+                    background-color:rgb(241, 51, 26);">
+                                <span>
+                                    <h3 class="pokemonType" id="fire">火</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Fennekin" id="653" value="653" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="656">
+                        <div class="Froakie" id="Froakie" data-index="呱呱泡蛙" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Froakie.png" alt="">
+                            <h2 class="pokemonName">呱呱泡蛙</h2>
+                            <div style="
+                    border:10px rgb(77, 117, 170) solid;
+                    border-radius:15px;
+                    background-color:rgb(77, 117, 170);">
+                                <span>
+                                    <h3 class="pokemonType" id="water">水</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Froakie" id="656" value="656" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- 第四排 -->
+
+        <tr>
+            <td>
+                <div>
+                    <label for="722">
+                        <div class="Rowlet" id="Rowlet" data-index="木木梟" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Rowlet.png" alt="">
+                            <h2 class="pokemonName">木木梟</h2>
+                            <div style="
+            border:10px rgb(44, 139, 44) solid;
+            border-radius:15px;
+            background-color:rgb(44, 139, 44);">
+                                <span>
+                                    <h3 class="pokemonType" id="grass">草</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Rowlet" id="722" value="722" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+
+            </td>
+
+            <td>
+                <div>
+                    <label for="725">
+                        <div class="Litten" id="Litten" data-index="火斑喵" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Litten.png" alt="">
+                            <h2 class="pokemonName">火斑喵</h2>
+                            <div style="
+            border:10px rgb(241, 51, 26) solid;
+            border-radius:15px;
+            background-color:rgb(241, 51, 26);">
+                                <h3 class="pokemonType" id="fire">火</h3>
+                            </div>
+                            <input type="checkbox" name="Litten" id="725" value="725" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="728">
+                        <div class="Popplio" id="Popplio" data-index="球球海獅" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Popplio.png" alt="">
+                            <h2 class="pokemonName">球球海獅</h2>
+                            <div style="
+            border:10px rgb(77, 117, 170) solid;
+            border-radius:15px;
+            background-color:rgb(77, 117, 170);">
+                                <span>
+                                    <h3 class="pokemonType" id="water">水</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Popplio" id="728" value="728" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="810">
+                        <div class="Grookey" id="Grookey" data-index="敲音猴" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Grookey.png" alt="">
+                            <h2 class="pokemonName">敲音猴</h2>
+                            <div style="
+            border:10px rgb(44, 139, 44) solid;
+            border-radius:15px;
+            background-color:rgb(44, 139, 44);">
+                                <span>
+                                    <h3 class="pokemonType" id="grass">草</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Grookey" id="810" value="810" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="813">
+                        <div class="Scorbunny" id="Scorbunny" data-index="炎兔兒" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Scorbunny.png" alt="">
+                            <h2 class="pokemonName">炎兔兒</h2>
+                            <div style="
+            border:10px rgb(241, 51, 26) solid;
+            border-radius:15px;
+            background-color:rgb(241, 51, 26);">
+                                <span>
+                                    <h3 class="pokemonType" id="fire">火</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Scorbunny" id="813" value="813"
+                                style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <label for="816">
+                        <div class="Sobble" id="Sobble" data-index="淚眼蜥" style=" border-radius:20px;">
+                            <br><img width="150" src="img/Sobble.png" alt="">
+                            <h2 class="pokemonName">淚眼蜥</h2>
+                            <div style="
+            border:10px rgb(77, 117, 170) solid;
+            border-radius:15px;
+            background-color:rgb(77, 117, 170);">
+                                <span>
+                                    <h3 class="pokemonType" id="water">水</h3>
+                                </span>
+                            </div>
+                            <input type="checkbox" name="Sobble" id="816" value="816" style="width:20px;height:20px;">
+                    </label>
+                </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- 第五排 -->
+        </div>
+    </table>
+
+    <!-- 中間御三家 -->
+
+    <hr>
+
+
+    <br>
+    <form action="">
+        <p>
+            <div>
+                <li>
+                    <label for="name" style="font-style: 微軟正黑體;font-size: 20px;">姓名:
+                        <input type="text" id="name" name="user_name" />
+                    </label>
+                </li>
+                <br><br>
+                <li>
+                    <label for="userPhone" style="font-style: 微軟正黑體;font-size: 20px;">電話:
+                        <input type="tel" id="userPhone">
+                    </label>
+                </li>
+                <br><br>
+                <li>
+                    <label for="sex" style="font-style: 微軟正黑體;font-size: 20px;">性別:
+                        <input type="radio" name="job" id="boy">
+                        <label for="student">男生
+                            <input type="radio" name="job" id="girl">
+                            <label for="teacher">女生
+                </li>
+                <br><br>
+                <li>
+                    <label for="age" style="font-style: 微軟正黑體;font-size: 20px;">年齡:
+                        <select id="age" name="age">
+                            <option value="15歲以下">15歲以下</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="25歲以上">25歲以上</option>
+                        </select>
+                    </label>
+                </li>
+            </div>
+
+
+            <table>
+                <tr>
+                    <td> <br><br><br><br>
+                        <input type="submit" value="送出" 
+                        style="width:200px;
+                        height:80px;
+                        font-family: 微軟正黑體;
+                        color: white;
+                        font-size: 30px;
+                        border-radius:15px;
+                        background-color:rgb(55, 108, 187)">
+                        </td>
+                </tr>
+            </table>
+        </p>
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>
